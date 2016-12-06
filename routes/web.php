@@ -27,6 +27,4 @@
 
 Route::get('/', 'PagesController@home');
 
-Route::get('about', function() {
-  return view('pages.about');     //This is telling laravel, 'look into' /resources/views/pages/about.blade.php
-});
+Route::get('about', 'PagesController@about');
